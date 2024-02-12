@@ -1245,8 +1245,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .close-icon {
   position: absolute;
-  top: 15px;
-  left: 10px;
+  top: 5px;
+  left: 5px;
   font-size: 40px;
   color: red;
   cursor: pointer;
@@ -1416,11 +1416,21 @@ textarea.form-input::-webkit-resizer { display: none; }
   
   .modal-main-part{
     height: auto;
+    width: 100%;
+    margin-top: auto;
   }
 
   .skill-div{
     width: 25%;
     padding: 10px;
+  }
+
+  .slider img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-top: 2rem;
   }
 
   .skill-div img{
@@ -1432,7 +1442,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .modal-right{
     flex: 1;
     width: 100%;
-    height: 100%;
+    height: auto;
     overflow-y:scroll ;
     background: #3d3d3d;
     border-radius: 8px;
@@ -1612,8 +1622,7 @@ box-shadow: inset 1px 1px 0 hsla(0, 0%, 100%, 0.11),
 
 
   .modal-main-part{
-    margin: 5rem 1rem;
-    margin-top: 22rem;
+    
     overflow-y: scroll;
   }
 
@@ -1689,8 +1698,8 @@ box-shadow: inset 1px 1px 0 hsla(0, 0%, 100%, 0.11),
 
 
   .modal-main-part{
-    margin: 5rem 1rem;
-    margin-top: 18rem;
+ 
+    
     overflow-y: scroll;
   }
 }
