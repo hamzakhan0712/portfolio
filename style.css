@@ -1416,7 +1416,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   
   .modal-main-part{
     margin: 5rem 1rem;
-    margin-top: 10rem;
+    margin-top: 30rem;
     overflow-y: scroll;
   }
 
