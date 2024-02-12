@@ -1415,7 +1415,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   
   
   .modal-main-part{
-    height: 100vh;
+    height: auto;
   }
 
   .skill-div{
