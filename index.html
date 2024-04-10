@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hamza Khan</title>
+
+  <link rel="shortcut icon" href="./images/profile.png" type="image/x-icon" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <main>
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./images/profile.png" alt="Richard hanrick" width="80" />
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Hamza Khan</h1>
+
+          <p class="title">Full Stack-Developer</p>
+          <p class="note">Contact on Istagram for Order or Code</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Details</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:hamza81khan81@gmail.com" class="contact-link">hamza81khan81@gmail.com</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="logo-github"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">GitHub</p>
+
+              <a href="https://github.com/hamzakhan0712" class="contact-link">hamzakhan0712</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Mumbai, India</address>
+            </div>
+          </li>
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.facebook.com/hamza81khan81" class="social-link" target="_blank">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://twitter.com/khanhamza379084" class="social-link" target="_blank">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/hamzakhan4104" class="social-link" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="main-content">
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" style="display:none;" data-nav-link>Portfolio</button>
+          </li>
+
+        </ul>
+      </nav>
+
+      <article class="about  active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About Me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hi there! I'm a data science student with experience working on
+            projects for different clients and freelancers. I'm pretty good at
+            using Django and other Python tools to build stuff.
+          </p>
+
+          <p>
+            I pay a lot of attention to making things look good and easy to
+            use. I like keeping things simple and making sure they work well
+            for everyone.
+          </p>
+        </section>
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./images/icon-design.svg
+                " alt="design icon" width="40" />
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a
+                  professional level.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./images/icon-dev.svg" alt="Web development icon" width="40" />
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./images/icon-app.svg" alt="mobile app icon" width="40" />
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for iOS and
+                  Android.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img />
+              </figure>
+
+              <img src="./images/icon-quote.svg" alt="quote icon" />
+            </div>
+
+            <div class="modal-content">
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were
+                  very pleased with the work done. She has a lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum
+                  dolor sit amet, ullamcous cididt consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels
+                  dolore magnarels alia.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </article>
+      
+      <article class="resume" data-page="resume">
+        <header>
+          <h2 class="h2 article-title"> Resume </h2>
+          <a href="FinalResume.pdf" id="download-link" class="download-link" download="FinalResume.pdf">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+            Resume
+        </a>
+        
+          
+        </header>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                Queen Mary's High School & Jr. College. (Primary & Secondary)
+              </h4>
+              <span>2006 — 2019</span>
+              <p class="timeline-text">
+                Completed primary and secondary education at Queen Mary's High
+                School & Jr. College, acquiring fundamental knowledge and
+                skills essential for academic and personal development.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                Asadullah Khan English High School & Jr. College. (High School
+                Education)
+              </h4>
+              <span>2019 — 2021</span>
+              <p class="timeline-text">
+                Completed higher education in the field of science, acquiring
+                advanced knowledge and skills in scientific principles,
+                methodologies, and research techniques.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                Anjuman-I-Islam's Abdul Razzaq Kalsekar Polytechnic, Mumbai
+                University. <br />
+                (Computer Engineering Diploma)
+              </h4>
+              <span>2021 — 2023</span>
+              <p class="timeline-text">
+                Successfully completed Diploma in Computer Engineering from
+                Anjuman-I-Islam's Abdul Razzaq Kalsekar Polytechnic, Mumbai
+                University, achieving a GPA of 72% and graduating with First
+                Class honors.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                Saraswati College of Engineering, Kharghar College in Navi
+                Mumbai, Maharashtra. <br />
+                (Currently Studying - Data Science Degree)
+              </h4>
+              <span>2023 ..... </span>
+              <p class="timeline-text">
+                Currently pursuing a degree in Data Science at Saraswati
+                College of Engineering, Kharghar College in Navi Mumbai,
+                Maharashtra, to develop advanced skills and knowledge in the
+                field of data analysis and machine learning.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="skill">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <!-- Icon for database, e.g., Database -->
+              <ion-icon name="server-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Tools & Languages</h3>
+          </div>
+
+          <div class="skills-container">
+            <ol class="timeline-list skill-ul">
+              <li class="timeline-item skill-li">
+                <h4 class="h4 timeline-item-title">Programming Languages:</h4>
+                <br />
+
+                <div class="li-div">
+
+                  <div class="skills-card skill-div">
+                    <img src="./images/python.png" alt="design icon" width="100%" />
+                  </div>
+
+                  <div class="skills-card skill-div">
+                    <img src="./images/c.png" alt="design icon" width="100%" />
+                  </div>
+
+                  <div class="skills-card skill-div white">
+                    <img src="./images/kotlin.png" alt="design icon" width="100%" />
+                  </div>
+
+                  <div class="skills-card skill-div">
+                    <img src="./images/net.png" alt="design icon" width="100%" />
+                  </div>
+
+                </div>
+              </li>
+              <li class="timeline-item skill-li">
+                <h4 class="h4 timeline-item-title">
+                  Frameworks and Libraries:
+                </h4>
+                <br />
+
+                <div class="li-div">
+                  <div class="skills-card skill-div">
+                    <img src="./images/django.png" alt="design icon" width="100%" />
+                  </div>
+
+                  <div class="skills-card skill-div white">
+                    <img src="./images/flask.png" alt="design icon" width="100%" />
+                  </div>
+
+                  <div class="skills-card skill-div">
+                    <img src="./images/bootstarp.png" alt="design icon" width="100%" />
+                  </div>
+
+                  <div class="skills-card skill-div">
+                    <img src="./images/tailwind.png" alt="design icon" width="100%" />
+                  </div>
+
+                  <div class="skills-card skill-div">
+                    <img src="./images/dlib-opencv.png" alt="design icon" width="100%" />
+                  </div>
+                </div>
+              </li>
+
+              <li class="timeline-item skill-li">
+                <h4 class="h4 timeline-item-title">Database and Storage:</h4>
+                <br />
+
+                <div class="li-div">
+                  <div class="skills-card skill-div white">
+                    <img src="./images/sqlite.png " alt="design icon" width="100%" />
+                  </div>
+
+                  <div class="skills-card skill-div white">
+                    <img src="./images/elastic search.png" alt="design icon" width="100%" />
+                  </div>
+                </div>
+              </li>
+
+              <li class="timeline-item skill-li">
+                <h4 class="h4 timeline-item-title">Development Tools:</h4>
+                <br />
+
+                <div class="li-div">
+                  <div class="skills-card skill-div">
+                    <img src="./images/vscode.png" alt="design icon" width="100%" />
+                  </div>
+
+                  <div class="skills-card skill-div">
+                    <img src="./images/vscode community.png" alt="design icon" width="100%" />
+                  </div>
+
+                  <div class="skills-card skill-div">
+                    <img src="./images/ubuntu.png" alt="design icon" width="100%" />
+                  </div>
+
+                  <div class="skills-card skill-div">
+                    <img src="./images/git.png" alt="design icon" width="100%" />
+                  </div>
+
+                  <div class="skills-card skill-div">
+                    <img src="./images/github.png" alt="design icon" width="100%" />
+                  </div>
+
+                  <div class="skills-card skill-div">
+                    <img src="./images/android studio.png" alt="design icon" width="100%" />
+                  </div>
+
+                  <div class="skills-card skill-div">
+                    <img src="./images/postman.png" alt="design icon" width="100%" />
+                  </div>
+                </div>
+              </li>
+
+              <li class="timeline-item skill-li">
+                <h4 class="h4 timeline-item-title">Others:</h4>
+                <br />
+
+                <div class="li-div">
+                  <div class="skills-card skill-div">
+                    <img src="./images/render.png" alt="design icon" width="100%" />
+                  </div>
+
+                  <div class="skills-card skill-div">
+                    <img src="./images/canva.png" alt="design icon" width="100%" />
+                  </div>
+
+                </div>
+              </li>
+            </ol>
+          </div>
+        </section>
+      </article>
+
+      <article class="portfolio" style="display:none;" data-page="portfolio">
+        <header>
+          <h2 class="h2 article-title">Work Done</h2>
+        </header>
+
+        <section class="projects">
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>App Development</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Desktop Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+          </ul>
+
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>
+                Select category
+              </div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+
+            <ul class="select-list">
+              <li class="select-item">
+                <button  data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="project-list">
+            <li class="project-item" data-filter-item data-category="web development">
+              <a href="#" class="project-link">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline" class="eye-icon"></ion-icon>
+                  </div>
+                  <img src="./images/Admin dashboard.png" alt="finance" loading="lazy" />
+                </figure>
+                <h3 class="project-title">Customer Relation Management</h3>
+                <p class="project-category">Web development</p>
+              </a>
+            </li>
+          </ul>
+
+          <div class="modal" id="project-modal">
+            <div class="modal-content">
+
+              <span class="close-icon">&times;</span>
+ 
+              <div class="modal-main-part">
+
+                <div class="modal-left">
+                  <div class="slider">
+                    <img src="./images/Admin dashboard.png" alt="finance" loading="lazy" />
+                    <img src="./images/agent dashboard.png" alt="finance" loading="lazy" />
+                    <img src="./images/analytics page.png" alt="finance" loading="lazy" />
+                    <img src="./images/attedance report.png" alt="finance" loading="lazy" />
+                    <img src="./images/mark attedance.png" alt="finance" loading="lazy" />
+                    <img src="./images/paid customer page.png" alt="finance" loading="lazy" />
+                    <img src="./images/tl report page.png" alt="finance" loading="lazy" />
+                    <img src="./images/tl page.png" alt="finance" loading="lazy" />
+                    <img src="./images/report page.png" alt="finance" loading="lazy" />
+
+                    <!-- Add more images here for the slider -->
+                    <button class="prev-slide">&#10094;</button>
+                    <button class="next-slide">&#10095;</button>
+                  </div>
+                </div>
+
+                <div class="modal-right">
+                  <h3 class="modal-project-title">
+                    Customer Relation Management for Call Center
+                  </h3>
+                  <p class="modal-project-description">
+                    This project entails the development of a robust Customer Relationship Management (CRM) system
+                    tailored specifically for call centers. Leveraging Django and SQLite technologies, our solution aims
+                    to streamline customer interactions, enhance efficiency, and optimize overall operations.
+                  </p>               
+                  <p class="modal-project-use">
+                    Purpose of Implementation: This system serves as a comprehensive tool to manage customer
+                    interactions, track inquiries, and facilitate seamless communication within the call center
+                    environment. By integrating Django's powerful framework and the reliability of SQLite databases, we
+                    ensure a scalable, secure, and user-friendly platform, ultimately enhancing customer satisfaction
+                    and operational effectiveness.
+                  </p>   
+                  
+                  <div class="technologies-used">
+                    <ol class=" skill-ul">
+                      <li class="timeline-item skill-li">
+                        <h4 class="h4 timeline-item-title">
+                          Technologies Used:
+                        </h4>
+                        <div class="li-div modal-li-div">
+                          <div class="skills-card skill-div modal-li">
+                            <img src="./images/python.png" alt="design icon" width="100%" />
+                          </div>
+                          <div class="skills-card skill-div modal-li">
+                            <img src="./images/django.png" alt="design icon" width="100%" />
+                          </div>
+                          <div class="skills-card skill-div modal-li white">
+                            <img src="./images/sqlite.png" alt="design icon" width="100%" />
+                          </div>
+                          <div class="skills-card skill-div modal-li">
+                            <img src="./images/html.png" alt="design icon" width="100%" />
+                          </div>
+                          <div class="skills-card skill-div modal-li">
+                            <img src="./images/css.png" alt="design icon" width="100%" />
+                          </div>
+
+                        </div>
+                      </li>
+                    </ol>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </section>
+      </article>
+
+
+
+    </div>
+  </main>
+
+
+  <script src="./script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
