@@ -1208,6 +1208,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   background: var(--bg-gradient-jet);
   border-radius: inherit;
   z-index: -1;
+  height: min-content;
 }
 
 /* Ensure images fill the card */
@@ -1387,7 +1388,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .skill-div img{
     width: 100%;
-    height: 100%;
     object-fit: contain;
   }
   
