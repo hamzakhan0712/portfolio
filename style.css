@@ -1,4 +1,5 @@
 :root {
+
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
     hsl(240, 1%, 25%) 3%, 
@@ -11,13 +12,13 @@
   ), hsl(240, 2%, 13%);
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
-    hsl(275, 60%, 20%) 0%, 
-    hsla(275, 60%, 18%, 0) 50%
+    hsl(45, 100%, 71%) 0%, 
+    hsla(36, 100%, 69%, 0) 50%
   );
   --bg-gradient-yellow-2: linear-gradient(
     135deg, 
-    hsla(275, 60%, 20%, 0.251) 0%, 
-    hsla(275, 60%, 18%, 0) 59.86%
+    hsla(45, 100%, 71%, 0.251) 0%, 
+    hsla(35, 100%, 68%, 0) 59.86%
   ), hsl(240, 2%, 13%);
   --border-gradient-onyx: linear-gradient(
     to bottom right, 
@@ -26,28 +27,25 @@
   );
   --text-gradient-yellow: linear-gradient(
     to right, 
-    hsl(214, 100%, 71%), 
-    hsl(214, 100%, 50%)
+    hsl(45, 100%, 72%), 
+    hsl(35, 100%, 68%)
   );
 
-/* solid */
---jet: hsl(0, 0%, 22%);
---onyx: hsl(240, 1%, 17%);
---eerie-black-1: hsl(240, 2%, 13%);
---eerie-black-2: hsl(240, 2%, 12%);
---smoky-black: hsl(0, 0%, 7%);
---white-1: hsl(0, 0%, 100%);
---white-2: hsl(0, 0%, 98%);
---orange-yellow-crayola: hsl(214, 100%, 50%);
---vegas-gold: hsl(214, 54%, 58%);
---light-gray: hsl(0, 0%, 84%);
---light-gray-70: hsla(0, 0%, 84%, 0.7);
---bittersweet-shimmer: hsl(0, 43%, 51%);
+  --jet: hsl(0, 0%, 22%);
+  --onyx: hsl(240, 1%, 17%);
+  --eerie-black-1: hsl(240, 2%, 13%);
+  --eerie-black-2: hsl(240, 2%, 12%);
+  --smoky-black: hsl(0, 0%, 7%);
+  --white-1: hsl(0, 0%, 100%);
+  --white-2: hsl(0, 0%, 98%);
+  --orange-yellow-crayola: hsl(45, 100%, 72%);
+  --vegas-gold: hsl(45, 54%, 58%);
+  --light-gray: hsl(0, 0%, 84%);
+  --light-gray-70: hsla(0, 0%, 84%, 0.7);
+  --bittersweet-shimmer: hsl(0, 43%, 51%);
 
-  /* font-family */
   --ff-poppins: 'Poppins', sans-serif;
 
-  /* font-size */
   --fs-1: 24px;
   --fs-2: 18px;
   --fs-3: 17px;
@@ -57,7 +55,6 @@
   --fs-7: 13px;
   --fs-8: 11px;
 
-  /* font-weight */
   --fw-300: 300;
   --fw-400: 400;
   --fw-500: 500;
@@ -73,6 +70,7 @@
   --transition-2: 0.5s ease-in-out;
 
 }
+
 
 
 *, *::before, *::after {
@@ -1192,6 +1190,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 /* Style for each skill card */
 .skills-card {
   width: calc(25% - 20px); /* Ensure each card takes up 25% of the container width, minus gap */
+  height: 180px;
   position: relative;
   background: var(--border-gradient-onyx);
   padding: 20px;
@@ -1213,8 +1212,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 /* Ensure images fill the card */
 .skills-card img {
+  min-width: 70px;
   width: 80%;
-  height: 60%; /* Ensure the image maintains its aspect ratio */
+  height: 80px; /* Ensure the image maintains its aspect ratio */
   object-fit: contain; 
   padding: 10px;/* Ensure the image covers the entire card without stretching */
 }
@@ -1240,164 +1240,106 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
-/* Default styles */
+/* Modal styles */
 .modal {
   display: none;
   position: fixed;
-  top: 0;
+  z-index: 9999;
   left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.781); /* Darken background */
-  z-index: 9999;
   overflow: auto;
-}
-
-.close-icon {
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  font-size: 40px;
-  color: red;
-  cursor: pointer;
-  z-index: 9999999;
-  border-radius: 4px;
-  padding: 0px 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-top: 60px;
 }
 
 .modal-content {
-  display: flex;
-  justify-content: center; /* Horizontally center */
-  align-items: center; /* Vertically center */
-  height: 100%; /* Set height to 100% */
-}
-
-.modal-main-part {
-  display: flex;
-  flex-direction: column; /* Display content in a column for smaller screens */
-  background: #00000000;
-  border: 2px solid #3d3d3d;
-  padding: 10px;
-  border-radius: 16px;
-  height: auto; /* Allow the height to adjust based on content */
-  gap: 20px;
-}
-
-.modal-left {
-  flex: 2;
-  width: 100%;
-
-}
-
-.modal-right {
-  flex: 1;
-  width: 100%;
-  height: 100%;
-  overflow-y:scroll ;
-  background: #3d3d3d;
-  border-radius: 8px;
-  padding: 8px ;
-}
-
-.modal-right::-webkit-scrollbar { width: 10px; }
-
-.modal-right::-webkit-scrollbar-track { background: transparent; }
-
-.modal-right::-webkit-scrollbar-thumb {
-  border: 2px solid var(--smoky-black);
-  background: hsla(0, 0%, 100%, 0.1);
-  border-radius: 20px;
-  box-shadow: inset 1px 1px 0 hsla(0, 0%, 100%, 0.11),
-              inset -1px -1px 0 hsla(0, 0%, 100%, 0.11);
-}
-
-.modal-right::-webkit-scrollbar-thumb:hover { background: hsla(0, 0%, 100%, 0.15); }
-
-.modal-right::-webkit-scrollbar-button { height: 100px; }
-
-.modal-li-div {
-  flex: 0 0 calc(25% - 20px); /* Each card takes up 25% of the modal width minus the padding */
-  padding: 10px; /* Add padding between cards */
-}
-
-.modal-li {
-  width: 60px !important;
-  padding: 0 !important;
-}
-
-.modal-project-title{
-  color: #fbfbfb;
-  font-size: 24px;
-  margin-bottom: 10px;
-  text-align: center;
-  
-}
-
-.modal-project-description{
-  color: #fff;
-  text-align: justify;
-  word-wrap: break-word;
-  margin-bottom: 5px;
-}
-
-.modal-project-use{
-  color: #fff;
-  text-align: justify;
-  word-wrap: break-word;
-  margin-bottom: 15px;
-}
-
-.note{
-  margin: 10px 0;
-  color: #e7c766;
-  text-align: center;
-}
-
-.slider {
-  max-width: 100%;
-  height: auto;
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
   position: relative;
 }
 
-.slider img {
-  display: none;
-  border-radius: 10px;
-  width: 100%; /* Set image width to fill the container */
-  height: 400px; /* Allow the height to adjust proportionally */
-  margin: auto;
-  object-fit: contain;
-
-}
-
-.slider img:first-child {
-  display: block;
-}
-
-.slider button {
+.close-icon {
+  color: #ff0000;
   position: absolute;
-  bottom: 0%;
-  transform: translateY(-50%);
-  background-color: #3d3d3d;
-  color: #e7c766;
-  border: none;
+  top: 10px;
+  right: 25px;
+  font-size: 28px;
+  font-weight: bold;
   cursor: pointer;
-  padding: 10px;
-  z-index: 10000;
-  border-radius: 8px;
+}
+
+.close-icon:hover,
+.close-icon:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Slider styles */
+.slider {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+}
+
+.slides {
+  display: flex;
+  overflow: hidden;
+}
+
+.slide {
+  min-width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
   width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-.slider button:hover {
-  color: #e7c766;
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-.prev-slide {
-  left: 10px;
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-.next-slide {
-  right: 10px;
+/* Project technologies */
+.project-technologies img {
+  margin: 5px;
+  width: 50px;
+  height: 50px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

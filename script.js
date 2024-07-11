@@ -158,56 +158,87 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
-const projectItem = document.querySelector('.project-item');
-const modal = document.getElementById('project-modal');
-const closeIcon = document.querySelector('.close-icon');
 
-projectItem.addEventListener('click', function() {
+
+
+
+
+
+
+
+document.querySelectorAll('.project-item').forEach(item => {
+  item.addEventListener('click', function() {
+    const modalId = this.getAttribute('onclick').match(/'(.*?)'/)[1];
+    openModal(modalId);
+  });
+});
+
+function openModal(modalId) {
+  const modal = document.getElementById(modalId);
   modal.style.display = 'block';
-  document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
-});
+  document.body.style.overflow = 'hidden';
+}
 
-closeIcon.addEventListener('click', function() {
+function closeModal(modalId) {
+  const modal = document.getElementById(modalId);
   modal.style.display = 'none';
-  document.body.style.overflow = 'auto'; // Restore scrolling when modal is closed
-});
+  document.body.style.overflow = 'auto';
+}
 
 window.addEventListener('click', function(event) {
-  if (event.target == modal) {
+  const modal = document.querySelector('.modal');
+  if (event.target === modal) {
     modal.style.display = 'none';
-    document.body.style.overflow = 'auto'; // Restore scrolling when modal is closed
+    document.body.style.overflow = 'auto';
   }
 });
 
+var slideIndex = 0;
 
-
-const slides = document.querySelectorAll('.slider img');
-const prevBtn = document.querySelector('.prev-slide');
-const nextBtn = document.querySelector('.next-slide');
-let slideIndex = 0;
-
-showSlide(slideIndex);
-
-function showSlide(index) {
-  if (index < 0) {
-    slideIndex = slides.length - 1;
-  } else if (index >= slides.length) {
+function showSlides(modalId, index) {
+  const modal = document.getElementById(modalId);
+  const slides = modal.querySelectorAll('.slide');
+  if (index >= slides.length) {
     slideIndex = 0;
+  } else if (index < 0) {
+    slideIndex = slides.length - 1;
+  } else {
+    slideIndex = index;
   }
-
-  slides.forEach(slide => slide.style.display = 'none');
+  slides.forEach(slide => {
+    slide.style.display = 'none';
+  });
   slides[slideIndex].style.display = 'block';
 }
 
-prevBtn.addEventListener('click', () => {
-  slideIndex--;
-  showSlide(slideIndex);
+function plusSlides(n, modalId) {
+  showSlides(modalId, slideIndex + n);
+}
+
+// Initialize the first slide of each modal
+document.querySelectorAll('.modal').forEach(modal => {
+  showSlides(modal.id, 0);
 });
 
-nextBtn.addEventListener('click', () => {
-  slideIndex++;
-  showSlide(slideIndex);
-});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
