@@ -1190,7 +1190,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 /* Style for each skill card */
 .skills-card {
   width: calc(25% - 20px); /* Ensure each card takes up 25% of the container width, minus gap */
-  height: 180px;
+  height: 120px;
   position: relative;
   background: var(--border-gradient-onyx);
   padding: 20px;
