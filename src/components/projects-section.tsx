@@ -4,7 +4,7 @@ import { ArrowRight, ExternalLink, Folder, Filter, Code, Layout, Server, Search,
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
-type ProjectCategory = "frontend" | "blockchain" | "fullstack" | "design" | "all";
+type ProjectCategory = "frontend" | "FullStack" | "fullstack" | "design" | "all";
 
 type Project = {
   title: string;
@@ -48,9 +48,9 @@ function ProjectsSection() {
   const projects: Project[] = [
     {
       title: "EtherEstate",
-      description: "A blockchain-based DApp to simplify real estate transactions using Ethereum smart contracts. Built with React, Solidity, Hardhat & Ethers.js, it enables wallet-based property listing, purchase, and secure on-chain ownership transfer.",
+      description: "A FullStack-based DApp to simplify real estate transactions using Ethereum smart contracts. Built with React, Solidity, Hardhat & Ethers.js, it enables wallet-based property listing, purchase, and secure on-chain ownership transfer.",
       tags: ["React", "Tailwind CSS", "Solidity", "Web3"],
-      category: "blockchain",
+      category: "FullStack",
       imageUrl: "https://i.postimg.cc/yY33JvhP/image.png",
       githubUrl: "https://github.com/HamzaK01/EtherEstate",
       liveUrl: "https://ethestate.vercel.app/",
@@ -86,7 +86,7 @@ function ProjectsSection() {
             Featured <span className="gradient-text bg-gradient-to-r from-white via-black to-white">Projects</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Discover my portfolio of web, blockchain, and full-stack development projects.
+            Discover my portfolio of web, FullStack, and full-stack development projects.
           </p>
         </div>
 
@@ -111,13 +111,13 @@ function ProjectsSection() {
             Frontend
           </Button>
           <Button
-            variant={filter === "blockchain" ? "default" : "outline"}
+            variant={filter === "FullStack" ? "default" : "outline"}
             size="sm"
-            onClick={() => setFilter("blockchain")}
+            onClick={() => setFilter("FullStack")}
             className="rounded-full transition-all duration-300 flex items-center gap-2"
           >
             <Server className="h-4 w-4" />
-            Blockchain
+            FullStack
           </Button>
           <Button
             variant={filter === "fullstack" ? "default" : "outline"}
@@ -186,7 +186,7 @@ function ProjectsSection() {
                   <div className="mb-2">
                     <span className={`text-xs px-2 py-1 rounded-full ${
                       project.category === 'frontend' ? 'bg-blue-500/10 text-blue-500' :
-                      project.category === 'blockchain' ? 'bg-green-500/10 text-green-500' :
+                      project.category === 'FullStack' ? 'bg-green-500/10 text-green-500' :
                       'bg-purple-500/10 text-purple-500'
                     }`}>
                       {project.category}

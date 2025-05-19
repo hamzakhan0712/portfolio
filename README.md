@@ -2,7 +2,7 @@
 
 <div align="center">
   <img src="public/me.jpeg" alt="DevHamza Logo" width="120" height="120" style="border-radius: 50%;">
-  <h3 align="center">Full-Stack & Blockchain Developer Portfolio</h3>
+  <h3 align="center">Full-Stack & FullStack Developer Portfolio</h3>
   <p align="center">
     A modern, responsive portfolio website showcasing my skills, projects, and professional experience.
   </p>
@@ -10,7 +10,7 @@
 
 ## 📋 Overview
 
-This portfolio website serves as a comprehensive showcase of my skills, projects, and professional journey as a Full-Stack and Blockchain Developer. Built with modern web technologies, it features a responsive design, smooth animations, and an intuitive user interface.
+This portfolio website serves as a comprehensive showcase of my skills, projects, and professional journey as a Full-Stack and FullStack Developer. Built with modern web technologies, it features a responsive design, smooth animations, and an intuitive user interface.
 
 ## 📊 Project Architecture
 
