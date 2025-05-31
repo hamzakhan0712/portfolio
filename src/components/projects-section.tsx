@@ -105,13 +105,15 @@ function ProjectsSection() {
     urltext: "ictmt-2025.vercel.app"
   },
   {
-    title: "SCOE Institutional Portal",
-    description: "Static website for Shri Chhatrapati Education Society featuring institutional information, programs offered, and admission procedures with modern UI components and accessibility compliance.",
-    tags: ["Vite", "ShadCN", "Tailwind CSS"],
+    title: "International Conference on Sustainable Technologies",
+    description: "Official website for ICST 2023 - An international conference hosted by Saraswati College of Engineering. Features conference details, speaker profiles, paper submission portal, and registration system with payment integration.",
+    tags: ["Next.js", "Tailwind CSS", "Shadcn" ],
     category: "static",
     imageUrl: "/sustech.jpg",
-    liveUrl: "https://scoe.vercel.app",
-    urltext: "scoe.vercel.app"
+    liveUrl: "https://icst2023.scoe.edu.in",
+    githubUrl: "https://github.com/yourusername/icst-conference",
+    urltext: "icst2023.scoe.edu.in",
+    featured: true
   },
    {
     title: "FaceAuth Attendance System",
