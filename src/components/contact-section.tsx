@@ -235,30 +235,32 @@ function ContactSection() {
           <div className="w-full md:w-1/2 space-y-8">
             <Card className="overflow-hidden border-border/50 bg-background/70 backdrop-blur-md hover:shadow-lg transition-all duration-300">
               <div className="p-6 md:p-8">
-                <div className="flex items-center justify-between mb-6">
-                  <h3 className="text-2xl font-bold">Contact Information</h3>
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6 gap-4">
+                  <h3 className="text-xl sm:text-2xl font-bold">Contact Information</h3>
                   <div className="flex space-x-2">
                     <Button
                       variant={activeTab === "contact" ? "default" : "ghost"}
                       size="sm"
                       onClick={() => setActiveTab("contact")}
+                      className="flex-1 sm:flex-initial"
                     >
                       <Mail className="h-4 w-4 mr-2" />
-                      Contact
+                      <span className="hidden xs:inline">Contact</span>
                     </Button>
                     <Button
                       variant={activeTab === "connect" ? "default" : "ghost"}
                       size="sm"
                       onClick={() => setActiveTab("connect")}
+                      className="flex-1 sm:flex-initial"
                     >
                       <Send className="h-4 w-4 mr-2" />
-                      Connect
+                      <span className="hidden xs:inline">Connect</span>
                     </Button>
                   </div>
                 </div>
 
                 {activeTab === "contact" ? (
-                  <div className="space-y-4">
+                  <div className="space-y-3 sm:space-y-4">
                     {contactInfo.map((item, index) => (
                       <motion.div
                         key={index}
@@ -266,21 +268,30 @@ function ContactSection() {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.3, delay: index * 0.1 }}
                         viewport={{ once: true }}
-                        className="group flex items-center justify-between p-4 rounded-lg border border-border/30 hover:border-primary/50 transition-all bg-background/50"
+                        className="group flex items-center justify-between p-3 sm:p-4 rounded-lg border border-border/30 hover:border-primary/50 transition-all bg-background/50"
                       >
-                        <a href={item.href} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-4 flex-grow">
-                          <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
+                        <a 
+                          href={item.href} 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="flex items-center space-x-3 sm:space-x-4 flex-grow min-w-0"
+                        >
+                          <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
                             {item.icon}
                           </div>
-                          <div>
-                            <h4 className="text-sm font-medium text-muted-foreground">{item.label}</h4>
-                            <p className="font-medium">{item.value}</p>
+                          <div className="min-w-0 overflow-hidden">
+                            <h4 className="text-xs sm:text-sm font-medium text-muted-foreground truncate">
+                              {item.label}
+                            </h4>
+                            <p className="text-sm sm:font-medium truncate">
+                              {item.value}
+                            </p>
                           </div>
                         </a>
                         {item.action && (
                           <button
                             onClick={item.action}
-                            className="flex-shrink-0 p-2 rounded-lg hover:bg-primary/10 transition-colors"
+                            className="flex-shrink-0 p-1 sm:p-2 rounded-lg hover:bg-primary/10 transition-colors"
                             aria-label={`Copy ${item.label}`}
                           >
                             {item.actionIcon}

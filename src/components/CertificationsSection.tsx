@@ -126,8 +126,8 @@ export default function AchievementsSection() {
 };
 
   return (
-    <section id="achievements" className="relative py-16 md:py-24 lg:py-32">
-      <div className="container px-4 sm:px-6 lg:px-8 mx-auto">
+    <section id="achievements" className="relative py-10 md:py-28 md:px-12 lg:px-24 overflow-hidden reveal-container">
+      <div className="container mx-auto relative z-10">
         {/* Section header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

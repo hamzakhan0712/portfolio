@@ -65,8 +65,8 @@ const skillCategories = [
     color: "blue",
     skills: [
       // Core Web Technologies
-      { name: "HTML5", icon: "/icons/html5.svg" },
-      { name: "CSS3", icon: "/icons/css3.svg" },
+      // { name: "HTML5", icon: "/icons/html5.svg" },
+      // { name: "CSS3", icon: "/icons/css3.svg" },
       { name: "JavaScript", icon: "/icons/javascript.svg" },
       
       // Frameworks & Libraries
@@ -106,11 +106,11 @@ const skillCategories = [
     color: "purple",
     skills: [
       // Cross-Platform
-      { name: "React Native", icon: "/icons/react.svg" },
+      // { name: "React Native", icon: "/icons/react.svg" },
       
       // Native Android
       { name: "Kotlin", icon: "/icons/kotlin.svg" },
-      { name: "Android SDK", icon: "/icons/android.svg" },
+      // { name: "Android SDK", icon: "/icons/android.svg" },
       { name: "JetPack Compose", icon: "/icons/jetpack.svg" },
       
       // Backend Services
@@ -135,12 +135,12 @@ const skillCategories = [
       { name: "Docker", icon: "/icons/docker.svg" },
       
       // CI/CD & DevOps Tools
-      { name: "CI/CD", icon: "/icons/cicd.svg" },
+      // { name: "CI/CD", icon: "/icons/cicd.svg" },
       { name: "GitHub", icon: "/icons/github.svg" },
       
       // Networking
-      { name: "Nginx", icon: "/icons/nginx.svg" },
-      { name: "WebSockets", icon: "/icons/websocket.svg" },
+      // { name: "Nginx", icon: "/icons/nginx.svg" },
+      // { name: "WebSockets", icon: "/icons/websocket.svg" },
       
       // API Tools
       { name: "Postman", icon: "/icons/postman.svg" }
@@ -154,12 +154,12 @@ const skillCategories = [
     skills: [
       // Relational
       { name: "PostgreSQL", icon: "/icons/postgresql.svg" },
-      { name: "MySQL", icon: "/icons/mysql.svg" },
+      // { name: "MySQL", icon: "/icons/mysql.svg" },
       { name: "SQLite", icon: "/icons/sqlite.svg" },
       
       // NoSQL
-      { name: "MongoDB", icon: "/icons/mongodb.svg" },
-      { name: "Firestore", icon: "/icons/firestore.svg" }
+      // { name: "MongoDB", icon: "/icons/mongodb.svg" },
+      // { name: "Firestore", icon: "/icons/firestore.svg" }
     ],
   },
 ];
