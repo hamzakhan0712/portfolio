@@ -113,7 +113,6 @@ function ProjectsSection() {
     liveUrl: "https://icst2023.scoe.edu.in",
     githubUrl: "https://github.com/yourusername/icst-conference",
     urltext: "icst2023.scoe.edu.in",
-    featured: true
   },
    {
     title: "FaceAuth Attendance System",
