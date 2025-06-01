@@ -71,8 +71,8 @@ function ProjectsSection() {
     tags: ["Next.js", "Tailwind CSS", "Framer Motion", "SSR"],
     category: "static",
     imageUrl: "/initcore.png",
-    liveUrl: "https://initcore.vercel.app",
-    urltext: "initcore.vercel.app"
+    liveUrl: "https://initcore.in",
+    urltext: "www.initcore.in"
   },
 
   {
