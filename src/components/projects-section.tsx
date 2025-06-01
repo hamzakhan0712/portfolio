@@ -110,9 +110,9 @@ function ProjectsSection() {
     tags: ["Next.js", "Tailwind CSS", "Shadcn" ],
     category: "static",
     imageUrl: "/sustech.jpg",
-    liveUrl: "https://icst2023.scoe.edu.in",
+    liveUrl: "https://scoe.vercel.app/",
     githubUrl: "https://github.com/yourusername/icst-conference",
-    urltext: "icst2023.scoe.edu.in",
+    urltext: "",
   },
    {
     title: "FaceAuth Attendance System",
