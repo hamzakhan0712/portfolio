@@ -29,20 +29,14 @@ function AboutSection() {
 
 const skills = [
   { name: "React", category: "frontend" },
-  { name: "Next.js", category: "frontend" },
   { name: "HTML/CSS", category: "frontend" },
   { name: "JavaScript", category: "language" },
   { name: "Python", category: "language" },
-  { name: "Java", category: "language" },
-  { name: "Spring Boot", category: "backend" },
   { name: "Django", category: "backend" },
   { name: "Kotlin", category: "language" },
   { name: "Node.js", category: "backend" },
   { name: "REST APIs", category: "backend" },
   { name: "PostgreSQL", category: "backend" },
-  { name: "MongoDB", category: "backend" },
-  { name: "Docker", category: "devops" },
-  { name: "CI/CD", category: "devops" },
   { name: "AWS", category: "devops" },
   { name: "Git", category: "devops" },
 ];
