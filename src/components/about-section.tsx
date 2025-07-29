@@ -115,7 +115,7 @@ const skills = [
                 </p>
 
                 <p>
-                  My technical stack includes frameworks like Django, Spring Boot, Kotlin, React, and Next.js. I specialize in building scalable, maintainable, and high-performance applications with modern development practices—delivering secure and seamless user experiences across platforms.
+                  My technical stack includes frameworks like Django,  Kotlin, React, and Next.js. I specialize in building scalable, maintainable, and high-performance applications with modern development practices—delivering secure and seamless user experiences across platforms.
                 </p>
 
                 </div>

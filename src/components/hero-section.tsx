@@ -36,7 +36,7 @@ export function HeroSection() {
             </div>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto md:mx-0 leading-relaxed">
-              I’m a full-stack developer specializing in Django, Spring Boot, and modern web development — crafting robust backend systems and seamless user experiences.
+              I’m a full-stack developer specializing in Django,  and modern web development — crafting robust backend systems and seamless user experiences.
             </p>
 
 
