@@ -65,13 +65,13 @@ const skillCategories = [
     color: "blue",
     skills: [
       // Core Web Technologies
-      // { name: "HTML5", icon: "/icons/html5.svg" },
-      // { name: "CSS3", icon: "/icons/css3.svg" },
+      { name: "HTML5", icon: "/icons/html5.svg" },
+      { name: "CSS3", icon: "/icons/css3.svg" },
       { name: "JavaScript", icon: "/icons/javascript.svg" },
       
       // Frameworks & Libraries
       { name: "React", icon: "/icons/react.svg" },
-      { name: "Next.js", icon: "/icons/nextjs.svg" },
+      // { name: "Next.js", icon: "/icons/nextjs.svg" },
       { name: "Redux", icon: "/icons/redux.svg" },
       
       // UI/Component Libraries
@@ -88,35 +88,35 @@ const skillCategories = [
     skills: [
       // Programming Languages
       { name: "Python", icon: "/icons/python.svg" },
-      { name: "Java", icon: "/icons/java.svg" },
+      // { name: "Java", icon: "/icons/java.svg" },
       
       // Frameworks
       { name: "Django", icon: "/icons/django.svg" },
       { name: "Flask", icon: "/icons/flask.svg" },
-      { name: "Spring Boot", icon: "/icons/spring.svg" },
+      // { name: "Spring Boot", icon: "/icons/spring.svg" },
       
       // API Technologies
       { name: "REST APIs", icon: "/icons/api.svg" },
     ],
   },
-  {
-    title: "Mobile Development",
-    icon: Smartphone,
-    category: "mobile",
-    color: "purple",
-    skills: [
-      // Cross-Platform
-      // { name: "React Native", icon: "/icons/react.svg" },
+  // {
+  //   title: "Mobile Development",
+  //   icon: Smartphone,
+  //   category: "mobile",
+  //   color: "purple",
+  //   skills: [
+  //     // Cross-Platform
+  //     // { name: "React Native", icon: "/icons/react.svg" },
       
-      // Native Android
-      { name: "Kotlin", icon: "/icons/kotlin.svg" },
-      // { name: "Android SDK", icon: "/icons/android.svg" },
-      { name: "JetPack Compose", icon: "/icons/jetpack.svg" },
+  //     // Native Android
+  //     { name: "Kotlin", icon: "/icons/kotlin.svg" },
+  //     // { name: "Android SDK", icon: "/icons/android.svg" },
+  //     { name: "JetPack Compose", icon: "/icons/jetpack.svg" },
       
-      // Backend Services
-      { name: "Firebase", icon: "/icons/firebase.svg" }
-    ],
-  },
+  //     // Backend Services
+  //     // { name: "Firebase", icon: "/icons/firebase.svg" }
+  //   ],
+  // },
   {
     title: "DevOps & Cloud",
     icon: Cloud,

@@ -371,10 +371,7 @@ export default function AchievementsSection() {
                         </a>
                       </Button>
                     )}
-                    <Button variant="ghost" size="sm" className="gap-2">
-                      <Download className="h-4 w-4" />
-                      Download
-                    </Button>
+                
                   </div>
                 </div>
               </div>

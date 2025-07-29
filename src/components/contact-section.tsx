@@ -177,7 +177,7 @@ function ContactSection() {
       bgColor: "bg-gray-900/10"
     },
     {
-      name: "Website",
+      name: "Developer's Group Website",
       icon: <Globe className="h-5 w-5" />,
       url: "https://initcore.vercel.app/",
        color: "hover:bg-gray-900 hover:text-white",
