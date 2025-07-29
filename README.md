@@ -154,10 +154,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📬 Contact
 
-- **Email**: Hamzak.pvt@gmail.com
-- **GitHub**: [HamzaK01](https://github.com/HamzaK01)
-- **LinkedIn**: [devHamza](https://www.linkedin.com/in/devHamza/)
-- **Twitter**: [Hamzakpvt](https://x.com/Hamzakpvt)
+- **Email**: Hamza81khan81@gmail.com
+- **LinkedIn**: [Hamza Khan](https://www.linkedin.com/in/hamza-khan-3a2b0024a/)
 
 ---
 
